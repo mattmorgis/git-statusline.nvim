@@ -1,0 +1,43 @@
+*git_statusline.txt*  Git statusline provider for Neovim
+
+==============================================================================
+CONTENTS                                                     *git_statusline*
+
+1. Introduction............................|git_statusline-intro|
+2. Setup...................................|git_statusline-setup|
+3. API.....................................|git_statusline-api|
+
+==============================================================================
+1. Introduction                                            *git_statusline-intro*
+
+git-statusline.nvim provides a small Git status string for use in statuslines.
+It runs `git status --porcelain=v1 -b` on a debounce and caches by repo root.
+
+==============================================================================
+2. Setup                                                   *git_statusline-setup*
+
+Example:
+>
+  require("git_statusline").setup({
+    debounce_ms = 200,
+  })
+<
+
+Options:
+  debounce_ms (number)  Debounce interval for Git calls in milliseconds.
+
+==============================================================================
+3. API                                                     *git_statusline-api*
+
+get({bufnr})                                          *git_statusline.get()*
+  Returns the cached Git status string for {bufnr}. Schedules a refresh if
+  needed. Returns an empty string if not in a Git repo.
+
+refresh({bufnr})                                  *git_statusline.refresh()*
+  Schedule a refresh for the repo containing {bufnr}.
+
+setup({opts})                                       *git_statusline.setup()*
+  Configure the module.
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:

@@ -1,0 +1,8 @@
+git_statusline	git_statusline.txt	/*git_statusline*
+git_statusline-api	git_statusline.txt	/*git_statusline-api*
+git_statusline-intro	git_statusline.txt	/*git_statusline-intro*
+git_statusline-setup	git_statusline.txt	/*git_statusline-setup*
+git_statusline.get()	git_statusline.txt	/*git_statusline.get()*
+git_statusline.refresh()	git_statusline.txt	/*git_statusline.refresh()*
+git_statusline.setup()	git_statusline.txt	/*git_statusline.setup()*
+git_statusline.txt	git_statusline.txt	/*git_statusline.txt*
