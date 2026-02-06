@@ -2,7 +2,7 @@
 
 Tiny Git status provider for Neovim statuslines. It exposes a single function that returns a formatted string like `main* ↑1 ↓2`.
 
-![git-statusline screenshot](git_status.png)
+![git-statusline screenshot](git-status-nvim.png)
 
 ## Install
 
